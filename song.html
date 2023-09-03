@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 12 Project</title>
-    <!-- This is our Bootstrap CSS Scripts -->
+    <!-- Bootstrap CSS -->
     <link rel="" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 
@@ -12,9 +12,78 @@
 
 <body>
   <h1>Song Manager</h1>
-    
 
+<form id="songForm">
+    <input type="hidden" id="songId" />
+        <div class="form-group">
+            <label for="song-name">Song Name:</label>
+            <input
+            type="text"
+            class="form-control"
+            id="song-name"
+            placeholder="Enter song name"
+            required
+            />
+        </div> 
+        <br>
 
+        <div class="form-group">
+            <label for="song-artist">Song Artist</label>
+            <input
+            type="text"
+            class="form-control"
+            id="song-artist"
+            placeholder="Enter song artist"
+            required
+            />
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="song-length">Song Length</label>
+            <input
+            type="text"
+            class="form-control"
+            id="song-length"
+            placeholder="Enter song length"
+            required
+            />
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="song-year">Song Year</label>
+            <input
+            type="text"
+            class="form-control"
+            id="song-year"
+            placeholder="Enter song year"
+            required
+            />
+        </div>
+        <br>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<br>
+
+<!-- Table to display songs -->
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Song Name</th>
+            <th>Song Artist</th>
+            <th>Song Length</th>
+            <th>Song Year</th>
+        </tr>
+    </thead>
+    <tbody id="songsTableBody">
+        <!-- Songs will be loaded here using jQuery -->
+    </tbody>
+</table>
 
 
 <!-- This will be our JS and Bootstrap JS Scripts -->
