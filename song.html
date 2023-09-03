@@ -10,7 +10,7 @@
 
 </head>
 
-<body class="container">
+<body class="container bg-success">
   <h1>Song Manager</h1>
 
 <form id="songForm">
@@ -63,7 +63,19 @@
         </div>
         <br>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group">
+            <label for="song-id">Song Id</label>
+            <input
+            type="text"
+            class="form-control"
+            id="song-id"
+            placeholder="Enter song id"
+            required
+            />
+        </div>
+        <br>
+
+        <button type="submit" class="btn btn-dark">Submit</button>
 </form>
 
 <br>
@@ -73,11 +85,11 @@
 <table class="table">
     <thead>
         <tr>
-            <th>ID</th>
             <th>Song Name</th>
             <th>Song Artist</th>
             <th>Song Length</th>
             <th>Song Year</th>
+            <th>Song ID</th>
         </tr>
     </thead>
     <tbody id="songsTableBody">
