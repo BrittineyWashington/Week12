@@ -1,21 +1,4 @@
-//Coding Steps:
-// Create a full CRUD application of your choice using an API or JSON Server.
-// Use JQuery/AJAX to interact with the API. 
-// Use a form to post new entities.
-// Build a way for users to update or delete entities.
-// Include a way to get entities from the API.
-// Use Bootstrap and CSS to style your project.
-
-//This is my Week 12 Final Unit Project JS File
-//Song Manager
 // console.log("Hello World... Song Manager is my Week 12 Project!");
-
-//these are turned on: 
-// GET  /song/:id   $mockData
-// POST /song       $mockData
-// PUT  /song/:id   $mockData
-// DELETE /song/:id $mockData
-//API endpoint https://64f41592932537f4051a1b1e.mockapi.io/Week12_Project_API/:endpoint
 
 //URL: https://64f41592932537f4051a1b1e.mockapi.io/Week12_Project_API/song
 
