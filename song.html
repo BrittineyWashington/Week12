@@ -10,98 +10,106 @@
 
 </head>
 
-<body class="container bg-success">
-  <h1>Song Manager</h1>
-
-<form id="songForm">
-    <input type="hidden" id="songId" />
-        <div class="form-group">
-            <label for="song-name">Song Name:</label>
+<!-- This is our site -->
+<body background="images/photo-1514525253161-7a46d19cd819.png">
+    <div id="main-container" class="container pt-2 pb-2 fs-1 text-center">
+    <h1 class="text-center text-decoration-underline text-shadow fw-bolder">Song Manager</h1>
+    </div>  
+    
+            <!-- This is the form to manage the songs for our site -->
+   <div class="container">     
+    <form id="songForm" class="bg-transparent">
+            <input type="hidden" id="songId"/>        
+        <div class="form-group text-light fs-4 fw-bold">
+            <label for="song-name">Song Name</label>
             <input
             type="text"
-            class="form-control"
+            class="form-control bg-transparent text-white fs-5 border-3"
             id="song-name"
             placeholder="Enter song name"
             required
             />
-        </div> 
-        <br>
 
-        <div class="form-group">
+        <div class="form-group text-light fs-4 fw-bold">
             <label for="song-artist">Song Artist</label>
             <input
             type="text"
-            class="form-control"
+            class="form-control bg-transparent text-white fs-5 border-3"
             id="song-artist"
             placeholder="Enter song artist"
             required
             />
-        </div>
-        <br>
 
-        <div class="form-group">
+        <div class="form-group text-light fs-4 fw-bold">
             <label for="song-length">Song Length</label>
             <input
             type="text"
-            class="form-control"
+            class="form-control bg-transparent text-white fs-5 border-3"
             id="song-length"
             placeholder="Enter song length"
             required
             />
-        </div>
-        <br>
 
-        <div class="form-group">
+        <div class="form-group text-light fs-4 fw-bold">
             <label for="song-year">Song Year</label>
             <input
             type="text"
-            class="form-control"
+            class="form-control bg-transparent text-white border-3 fs-5"
             id="song-year"
             placeholder="Enter song year"
             required
             />
-        </div>
-        <br>
 
-        <div class="form-group">
-            <label for="song-id">Song Id</label>
+        <div class="form-group text-light fs-4 fw-bold">
+            <label for="id">Song ID</label>
             <input
             type="text"
-            class="form-control"
-            id="song-id"
+            class="form-control bg-transparent text-light border-3 fs-5"
+            id="id"
             placeholder="Enter song id"
             required
             />
+                </div>
+             </div>
         </div>
-        <br>
-
-        <button type="submit" class="btn btn-dark">Submit</button>
-</form>
-
+    </div>
+</div>
+        <!-- This is to add the songs to the Song Manager -->
+        <button type="submit" class="btn btn-outline-light btn-sm rounded mt-3 p-3 border-5">Submit</button>      
+    </form>
+</div>
 <br>
-
 <!-- Table to display songs -->
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Song Name</th>
-            <th>Song Artist</th>
-            <th>Song Length</th>
-            <th>Song Year</th>
-            <th>Song ID</th>
-        </tr>
-    </thead>
-    <tbody id="songsTableBody">
+    <div class="jumbotron m-2">
+        <div class="table-responsive-xs m-3">
+            <table class="table table-hover table-dark table-striped">
+                <thead class="bg-dark">
+                    <tr>
+                        <th>Song ID</th>
+                        <th>Song Name</th>
+                        <th>Song Artist</th>
+                        <th>Song Length</th>
+                        <th>Song Year</th>
+                    </tr>
+                </thead>
+                    <tbody id="songsTableBody">
         <!-- Songs will be loaded here using jQuery -->
-    </tbody>
-</table>
-
+                    </tbody>
+            </table>
+        </div>
+    <!-- </div> -->
 
 <!-- This will be our JS and Bootstrap JS Scripts -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="song.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+<!-- this is just a personal touch that I want to keep practicing -->
+<footer class="text-center text-light text-bold pt-1 pb-3">
+    <p>Brittiney Washington ©️2023</p>
+</footer>
 
 </body>
 </html>
